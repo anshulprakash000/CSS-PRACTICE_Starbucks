@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks | Landing page</title>
+</head>
+
+<body>
+    <section>
+        <div class="circle">
+
+        </div>
+        <header>
+            <a href="#" class="logo">
+                <img src="logo.png" alt="">
+            </a>
+            <ul>
+                <li><a href="#"> Home</a> </li>
+                <li><a href="#"> Menu</a> </li>
+                <li><a href="#"> What's new</a></li>
+                <li><a href="#"> Contact</a> </li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>
+                    It's not just Coffee <br> It's <span>Starbucks</span>
+                </h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium rerum accusamus, temporibus
+                    asperiores ea a harum id aut ipsa modi autem quibusdam, qui corrupti? Suscipit, repellat fuga quis,
+                    nihil tempora architecto facere consequatur facilis ea expedita voluptatum ipsa dignissimos
+                    repellendus sint quasi impedit eos rerum molestiae delectus ad eveniet culpa eum, provident earum!
+                    Adipisci deleniti ratione officiis dolorum voluptatem. Reprehenderit?
+
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="starbucks" alt="">
+            </div>
+
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png'); changeCircleColor('#017143'); "></li>
+            <li class="img2"><img src="thumb2.png" onclick="imgSlider('img2bg.png'); changeCircleColor('#eb7495');"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png'); changeCircleColor('#d752b1'); "></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="instagram.png" alt=""></a></li>
+        </ul>
+
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    
+    </script>
+
+
+
+
+
+
+    <!-- created by : Anshul Prakash on 10-08-2021 -->
+
+</body>
+
+</html>
